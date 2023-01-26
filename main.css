@@ -1,0 +1,372 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+
+}
+ .content{
+    display: flex;
+    width: 1180px;
+    margin: 0 auto;
+}
+.header{
+    display: flex;
+    background-color: #F8F8F8;
+    height: 91px;
+    margin: 0 auto;
+
+}
+.header .content{
+    justify-content: space-between;
+    margin: auto;
+}
+.ico{
+    position: relative;
+}
+.phone{
+    display: flex;
+    margin: auto 0;
+    flex-direction: column;
+}
+.phone .tel{
+    font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+color: #000;
+}
+.phone .call{
+    font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+
+
+text-decoration-line: underline;
+
+color: #F9A82F;
+}
+.search{
+    position: relative;
+    margin: auto 0;
+    padding: 17px 11px;
+    width: 280px;
+    border: 1px solid #DCDCDC;
+    border-radius: 50px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #606060;
+}
+
+.cart{
+   flex-direction: row;
+}
+.heart, .cart, .profile{
+    margin: auto 0;
+}
+.num{
+    top: -5px;
+    right: -5px;
+    position: absolute;
+    display: flex;
+    width: 14px;
+    height: 14px;
+    background: #F9A82F;
+    color: #fff;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    border-radius: 7px;
+    justify-content: center;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    width: 1180px;
+    margin: 0 auto;
+    background-color: #fff;
+
+
+}
+.dropdown {
+    max-width: 226px;
+    float: left;
+    margin: 21px 0 20px;
+
+
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;
+    font-weight: 700;
+    color: #F9A82F;
+    font-size: 16px;  
+    border: none;
+    outline: none;
+
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    z-index: 1;
+  }
+  .dropdown-content a {
+    float: none;
+    color: #A9A9A9;
+    padding: 14px 16px;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+.dropdown-content a:hover {
+    color: #F9A82F;
+  }
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 70vw;
+    padding: 21px 0 20px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000;
+}
+.navbar a{
+    margin-left: 10%;
+    color: #000;
+}
+.navbar a:hover{
+    color: #F9A82F;
+}
+
+.slider{
+    position: relative;
+
+}
+.slides-container{
+    position: relative;
+    max-width: 1920px;
+    margin: auto;
+}
+.slide{
+    background: radial-gradient(63.57% 111.48% at 50% 50%, #D3B482 0%, #AC9370 100%);
+}
+.slide img{
+    width: 100%;
+}
+.slide h2{
+    color:#fff;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 39px;
+} 
+.slide p{
+    color: #fff;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+
+}
+.slide .content{
+    position: absolute;
+    top: 3vh;
+    left: 11vw;
+
+}
+.slide button{
+    position: absolute;
+    top: 27vh;
+    width: 123px;
+    height: 42px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    background: #F9A82F;
+    border-radius: 100px;
+    border: none;
+}
+.slide button:hover{
+    background-color: #fff;
+    color: #000;
+    transition: background-color .6s ease;
+
+}
+.slide .text{
+    max-width: 680px;
+}
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes fade{
+    from{opacity: .6;}
+    to{opacity: 1;}
+}
+@keyframes fade{
+    from{opacity: .6;}
+    to{opacity: 1;}
+}
+.dots{
+    position: absolute;
+    bottom: 3vh;
+    left: 11vw;
+}
+.dot{
+    cursor: pointer;
+    height: 7px;
+    width: 7px;
+    margin: 0 2px;
+    border-radius: 50%;
+    background-color: #E8CB9F;
+    display: inline-block;
+    transition: background-color .6s ease;
+}
+.active, dot:hover{
+    background-color: #fff;
+}
+.about-us{
+    position: relative;
+    display: flex;
+    padding: 10vh 0;
+
+}
+.about-us .text{
+    width: 680px;
+}
+.about-us h2{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 30px;
+    color: #151515;
+}
+.about-us p{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    color: #646464;
+    
+}
+.about-us img{
+   position: absolute;
+   right: 0;
+    width: 40%;
+}
+.btn{
+    width: 123px;
+    height: 41.09px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    background: #F9A82F;
+    border-radius: 100px;
+    border: none;
+
+    background: #F9A82F;
+    border-radius: 100px;
+}
+.btn:hover{
+    background: #000;
+    color: #fff;
+    transition: background-color .6s ease;
+
+}
+footer{
+    height: 371px;
+    
+}
+  .footer{
+    height: 307px;
+    display: flex;
+    background: #484848;
+
+
+  }
+  .footer .content{
+    justify-content: space-between;
+  }
+  .sub, .info, .buy, .pers{
+    display: flex;
+    flex-direction: column;
+    margin-top: 63px;
+  }
+  
+  .sub span, .info span, .buy span, .pers span{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+  }
+  .sub p, .info a, .buy a, .pers a{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #B0B0B0;
+  }
+
+
+  .sub{
+    width: 339px
+  }
+  .sub input{
+    border: 1px solid #B0B0B0;
+    width: 211px;
+    max-height: 41px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .sub button{
+    width: 128px;
+    height: 41px;
+    background: #B0B0B0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+    border: none;
+  }
+  .sub .form{
+display: flex;
+  }
+  .copy{
+
+    background: #383838;
+    height: 64px;
+    color: #5F5F5F;
+
+  }
+ 
+
+  .mango{
+    margin-left: auto;    
+    width: 61px;
+    height: 31px;
+    background: url(img/mango.svg);
+  }
+  .mango:hover{
+    background: url(img/mango-hover.svg);
+  }
